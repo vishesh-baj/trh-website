@@ -1,9 +1,21 @@
-function App() {
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import routes from "./routes/routes";
+const App = () => {
   return (
     <div>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <BrowserRouter>
+        <Routes>
+          {routes.map((route) => (
+            <Route
+              path={route.path}
+              exact={route.exact}
+              element={route.element}
+            />
+          ))}
+        </Routes>
+      </BrowserRouter>
     </div>
   );
-}
-
+};
 export default App;
