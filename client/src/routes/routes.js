@@ -21,6 +21,6 @@ const routes = [
   { key: "route08", path: PATHS.team, element: <TeamPage /> },
   { key: "route09", path: PATHS.career, element: <CareerPage /> },
   { key: "route10", path: PATHS.contact, element: <ContactPage /> },
-];
+]; 
 
 export default routes;
