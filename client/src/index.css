@@ -1,9 +1,0 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-.input {
-  @apply block w-full px-4 py-3 rounded-lg  border-2 text-white transition duration-300
-     focus:border-teal-300 focus:outline-none
-     invalid:border-teal-300 bg-transparent outline-none;
-}
