@@ -1,17 +1,9 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import routes from "./routes/routes";
-
+import Layout from "./layout/Layout";
 const App = () => {
   return (
     <React.Fragment>
-      <BrowserRouter>
-        <Routes>
-          {routes.map((route) => (
-            <Route path={route.path} element={route.element} />
-          ))}
-        </Routes>
-      </BrowserRouter>
+      <Layout />
     </React.Fragment>
   );
 };
